@@ -3,9 +3,22 @@ import java.util.Map;
 import java.util.TreeMap;
 
 class PackPicnicBasket {
-    public static String packPicnicBasket(String[] items, int[] quantities, int maxWeight) {
-        // Write code here
+    public static void main(String[] args) {
+        String[] items = {"apple", "banana", "grape"};
+        int[] quantities = {2, 3, 4};
+        int maxWeight = 5;
 
+        String result = packPicnicBasket(items, quantities, maxWeight);
+        System.out.println(result);
+
+        if(result.equals("apple: 2\nbanana: 3\n")) {
+            System.out.println("Test passed");
+        } else {
+            System.out.println("Test failed");
+        }
+    }
+
+    public static String packPicnicBasket(String[] items, int[] quantities, int maxWeight) {
         // Create list 
         HashMap<String, Integer> finalBasket = new HashMap<>();
         
@@ -32,4 +45,5 @@ class PackPicnicBasket {
             return result;
         }
     }
+
 }
