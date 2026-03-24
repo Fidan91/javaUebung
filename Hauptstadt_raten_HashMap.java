@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Set;
+// import java.util.Set;
 
 class Main{
     public static void main (String[] args){
@@ -50,6 +50,7 @@ class Main{
                 System.out.println("Leider Falsch! Die richtige Antwort lautet: " + capital.get(country));
             }
             
+            scan.close();
         }
 
     // Ausgeben mit Set
